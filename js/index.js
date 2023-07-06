@@ -47,6 +47,24 @@ function nextModal(activeModal) {
     })
 }
 
+function sliderActive() {
+    const children = slider.children;
+    for (var i = 0; i < slider.children.length; i++) {
+        children[i].classList.remove("active-slider");
+    }
+
+    const middleIndex = Math.floor(children.length / 2);
+    const middleChild = children[middleIndex - 1];
+
+    middleChild.classList.add("active-slider");
+
+    slider.insertBefore(children[children.length - 1], children[0]);
+}
+
+
+
+
 popDownModal();
+setInterval(sliderActive, 3000);
 
 

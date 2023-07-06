@@ -44,7 +44,9 @@ i {
 
 
     img {
+
         width: 700px;
+
     }
 
     .popup-buttons {
@@ -55,4 +57,23 @@ i {
         justify-content: space-around;
         width: 100%;
     }
+}
+
+.slider-image {
+    height: 300px;
+}
+
+.active-slider {
+    transform: scale(130%);
+}
+
+body {
+    background-color: rgba(250, 250, 250, 0.959);
+}
+
+h1,
+h3 {
+    color: rgb(49, 77, 105);
+    font-weight: 600;
+    font-family: 'Courier New', Courier, monospace;
 }
